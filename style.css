@@ -4,18 +4,18 @@
     min-height: 0;
     font-family: "iosevka nerd font";
     font-weight: 500;
-    font-size: 14px;
+    font-size: 11.2px;          /* 14px * 0.8 */
     padding: 0;
 }
 
 window#waybar {
-    background: #24273a; /* Macchiato base */
-    border: 2px solid #363a4f; /* Macchiato surface0 */
+    background: #24273a;         /* Macchiato base */
+    border: 1.6px solid #363a4f; /* 2px * 0.8 */
 }
 
 tooltip {
-    background-color: #24273a; /* Macchiato base */
-    border: 2px solid #5b6078; /* Macchiato overlay0 */
+    background-color: #24273a;       /* Macchiato base */
+    border: 1.6px solid #5b6078;     /* 2px * 0.8 */
 }
 
 #clock,
@@ -26,22 +26,27 @@ tooltip {
 #network,
 #backlight,
 #pulseaudio {
-    margin: 6px 6px 6px 0px;
-    padding: 2px 8px;
+    margin: 4.8px 4.8px 4.8px 0;      /* 6px * 0.8 */
+    padding: 1.6px 6.4px;            /* 2px * 0.8, 8px * 0.8 */
 }
 
 #workspaces {
-    background-color: #1e2030; /* Macchiato mantle */
-    margin: 6px 0px 6px 6px;
-    border: 2px solid #363a4f; /* Macchiato surface0 */
+    background-color: #1e2030;       /* Macchiato mantle */
+    margin: 4.8px 0 4.8px 4.8px;     /* 6px * 0.8 */
+    border: 1.6px solid #363a4f;     /* 2px * 0.8 */
 }
 
 #workspaces button {
     all: initial;
     min-width: 0;
-    box-shadow: inset 0 -3px transparent;
-    padding: 2px 4px;
-    color: #b7bdf8; /* Macchiato lavender */
+    box-shadow: inset 0 -2.4px transparent;  /* -3px * 0.8 */
+    padding: 1.6px 3.2px;                   /* 2px * 0.8, 4px * 0.8 */
+    color: #b7bdf8;                         /* Macchiato lavender */
+}
+
+#workspaces button.active {
+    background-color: #8aadf4;
+    color: #24273a;
 }
 
 #workspaces button.focused {
@@ -52,22 +57,27 @@ tooltip {
     background-color: #ed8796; /* Macchiato red */
 }
 
+#workspaces button:hover {
+    background-color: #8aadf4;
+    color: #24273a;
+}
+
 #clock {
-    background-color: #1e2030; /* Macchiato mantle */
-    border: 2px solid #363a4f; /* Macchiato surface0 */
-    color: #cad3f5; /* Macchiato text */
+    background-color: #1e2030;       /* Macchiato mantle */
+    border: 1.6px solid #363a4f;     /* 2px * 0.8 */
+    color: #cad3f5;                  /* Macchiato text */
 }
 
 #tray {
-    background-color: #8aadf4; /* Macchiato blue */
-    border: 2px solid #7dc4e4; /* Macchiato sapphire */
-    color: #24273a; /* Macchiato base */
+    background-color: #8aadf4;       /* Macchiato blue */
+    border: 1.6px solid #7dc4e4;     /* 2px * 0.8 */
+    color: #24273a;                  /* Macchiato base */
 }
 
 #battery {
-    background-color: #a6da95; /* Macchiato green */
-    border: 2px solid #8bd5ca; /* Macchiato teal */
-    color: #24273a; /* Macchiato base */
+    background-color: #a6da95;       /* Macchiato green */
+    border: 1.6px solid #8bd5ca;     /* 2px * 0.8 */
+    color: #24273a;                  /* Macchiato base */
 }
 
 #cpu,
@@ -75,22 +85,22 @@ tooltip {
 #network,
 #backlight,
 #pulseaudio {
-    background-color: #91d7e3; /* Macchiato sky */
-    border: 2px solid #7dc4e4; /* Macchiato sapphire */
-    color: #24273a; /* Macchiato base */
+    background-color: #91d7e3;       /* Macchiato sky */
+    border: 1.6px solid #7dc4e4;     /* 2px * 0.8 */
+    color: #24273a;                  /* Macchiato base */
 }
 
 #cpu.critical,
 #memory.critical {
-    background-color: #f5a97f; /* Macchiato peach */
-    border: 2px solid #f5bde6; /* Macchiato pink */
-    color: #24273a; /* Macchiato base */
+    background-color: #f5a97f;       /* Macchiato peach */
+    border: 1.6px solid #f5bde6;     /* 2px * 0.8 */
+    color: #24273a;                  /* Macchiato base */
 }
 
 #battery.warning,
 #battery.critical,
 #battery.urgent {
-    background-color: #ed8796; /* Macchiato red */
-    border: 2px solid #ee99a0; /* Macchiato maroon */
-    color: #24273a; /* Macchiato base */
+    background-color: #ed8796;       /* Macchiato red */
+    border: 1.6px solid #ee99a0;     /* 2px * 0.8 */
+    color: #24273a;                  /* Macchiato base */
 }

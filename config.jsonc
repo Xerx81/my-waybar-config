@@ -9,7 +9,7 @@
     "margin-left": 8,
 
     "modules-left": [
-        "sway/workspaces"
+        "hyprland/workspaces"
     ],
 
     "modules-center": [
@@ -18,19 +18,16 @@
 
     "modules-right": [
         "tray",
-        "cpu_text",
-        "cpu",
-        "memory",
         "battery",
         "network",
         "pulseaudio",
         "backlight"
     ],
 
-    "sway/workspaces": {
-        "disable-scroll": false,
-        "all-outputs": true,
-        "tooltip": false
+    "hyprland/workspaces": {
+        "format": "{icon}",
+        "on-scroll-up": "hyprctl dispatch workspace e-1",
+        "on-scroll-down": "hyprctl dispatch workspace e+1",
     },
 
     "tray": {
@@ -41,24 +38,6 @@
     "clock": {
         "format": "{:%I:%M %p - %a, %d %b %Y}",
         "tooltip": false
-    },
-
-    "cpu": {
-        "format": "cpu {usage}%",
-        "interval": 2,
-
-        "states": {
-            "critical": 90
-        }
-    },
-
-    "memory": {
-        "format": "mem {percentage}%",
-        "interval": 2,
-
-        "states": {
-            "critical": 80
-        }
     },
 
     "battery": {
