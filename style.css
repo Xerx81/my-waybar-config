@@ -1,21 +1,21 @@
 * {
     border: none;
-    border-radius: 6;
+    border-radius: 6px;
     min-height: 0;
     font-family: "iosevka nerd font";
     font-weight: 500;
-    font-size: 13px;          /* 14px * 0.8 */
+    font-size: 13px;
     padding: 0;
 }
 
 window#waybar {
-    background: #24273a;         /* Macchiato base */
-    border: 1.6px solid #363a4f; /* 2px * 0.8 */
+    background: #2E2A3A;           /* pastel-Dracula background */
+    border: 1.6px solid #4E4A62;   /* softened current-line */
 }
 
 tooltip {
-    background-color: #24273a;       /* Macchiato base */
-    border: 1.6px solid #5b6078;     /* 2px * 0.8 */
+    background-color: #2E2A3A;
+    border: 1.6px solid #4E4A62;
 }
 
 #clock,
@@ -26,81 +26,88 @@ tooltip {
 #network,
 #backlight,
 #pulseaudio {
-    margin: 4.8px 4.8px 4.8px 0;      /* 6px * 0.8 */
-    padding: 1.6px 6.4px;            /* 2px * 0.8, 8px * 0.8 */
+    margin: 4.8px 4.8px 4.8px 0;
+    padding: 1.6px 6.4px;
+    color: #ECEFF4;                /* off-white text */
 }
 
+/* Workspaces (lavender family) */
 #workspaces {
-    background-color: #1e2030;       /* Macchiato mantle */
-    margin: 4.8px 0 4.8px 4.8px;     /* 6px * 0.8 */
-    border: 1.6px solid #363a4f;     /* 2px * 0.8 */
+    background-color: #4E4A62;
+    margin: 4.8px 0 4.8px 4.8px;
+    border: 1.6px solid #4E4A62;
 }
-
 #workspaces button {
     all: initial;
     min-width: 0;
-    box-shadow: inset 0 -2.4px transparent;  /* -3px * 0.8 */
-    padding: 1.6px 3.2px;                   /* 2px * 0.8, 4px * 0.8 */
-    color: #b7bdf8;                         /* Macchiato lavender */
+    box-shadow: inset 0 -2.4px transparent;
+    padding: 1.6px 3.2px;
+    color: #C5B8FF;                /* lavender */
 }
-
 #workspaces button.active {
-    background-color: #8aadf4;
-    color: #24273a;
+    background-color: #D4CCFF;     /* lighter lavender */
+    color: #ECEFF4;
 }
-
 #workspaces button.focused {
-    color: #c6a0f6; /* Macchiato mauve */
+    color: #E0C5FF;                /* pale orchid */
 }
-
 #workspaces button.urgent {
-    background-color: #ed8796; /* Macchiato red */
+    background-color: #E0C5FF;     /* same orchid for urgency */
 }
-
 #workspaces button:hover {
-    background-color: #8aadf4;
-    color: #24273a;
+    background-color: #D4CCFF;
+    color: #ECEFF4;
 }
 
+/* Clock */
 #clock {
-    background-color: #1e2030;       /* Macchiato mantle */
-    border: 1.6px solid #363a4f;     /* 2px * 0.8 */
-    color: #cad3f5;                  /* Macchiato text */
+    background-color: #4E4A62;
+    border: 1.6px solid #4E4A62;
 }
 
+/* Tray – pastel purple */
 #tray {
-    background-color: #8aadf4;       /* Macchiato blue */
-    border: 1.6px solid #7dc4e4;     /* 2px * 0.8 */
-    color: #24273a;                  /* Macchiato base */
+    background-color: #2E2A3A;     /* from Bd93f9 → pastel */
+    border: 1.6px solid #C5B8FF;
+    color: #2E2A3A;
 }
 
+/* Battery – pastel mauve */
 #battery {
-    background-color: #a6da95;       /* Macchiato green */
-    border: 1.6px solid #8bd5ca;     /* 2px * 0.8 */
-    color: #24273a;                  /* Macchiato base */
+    background-color: #E5D4FF;     /* from 50fa7b → purple */
+    border: 1.6px solid #D4CCFF;
+    color: #2E2A3A;
 }
 
+/* CPU, memory, network, backlight, pulseaudio – lilac tones */
 #cpu,
 #memory,
 #network,
 #backlight,
 #pulseaudio {
-    background-color: #91d7e3;       /* Macchiato sky */
-    border: 1.6px solid #7dc4e4;     /* 2px * 0.8 */
-    color: #24273a;                  /* Macchiato base */
+    background-color: #E0D1FF;     /* unified lilac */
+    border: 1.6px solid #C5B8FF;
+    color: #2E2A3A;
 }
 
+/* Critical CPU/memory – soft peach-purple */
 #cpu.critical,
 #memory.critical {
-    background-color: #f5a97f;       /* Macchiato peach */
-    border: 1.6px solid #f5bde6;     /* 2px * 0.8 */
-    color: #24273a;                  /* Macchiato base */
+    background-color: #F5E1FF;     /* pale plum */
+    border: 1.6px solid #E5D4FF;
+    color: #2E2A3A;
 }
 
-#battery.warning,
+/* Battery warning – muted lavender-yellow */
+#battery.warning {
+    background-color: #F3D1FF;     /* very pale purple-pink */
+    border: 1.6px solid #E5D4FF;
+    color: #2E2A3A;
+}
+/* Battery critical/urgent – soft rose-purple */
 #battery.critical,
 #battery.urgent {
-    background-color: #ed8796;       /* Macchiato red */
-    border: 1.6px solid #ee99a0;     /* 2px * 0.8 */
-    color: #24273a;                  /* Macchiato base */
+    background-color: #F5C6FF;     /* pastel rose-purple */
+    border: 1.6px solid #E0D1FF;
+    color: #2E2A3A;
 }
