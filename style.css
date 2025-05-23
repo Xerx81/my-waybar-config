@@ -46,7 +46,7 @@ tooltip {
 }
 #workspaces button.active {
     background-color: #D4CCFF;     /* lighter lavender */
-    color: #ECEFF4;
+    color: #2E2A3A;
 }
 #workspaces button.focused {
     color: #E0C5FF;                /* pale orchid */
@@ -56,7 +56,7 @@ tooltip {
 }
 #workspaces button:hover {
     background-color: #D4CCFF;
-    color: #ECEFF4;
+    color: #2E2A3A;
 }
 
 /* Clock */
