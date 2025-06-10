@@ -9,8 +9,7 @@
 }
 
 window#waybar {
-    background: #2E2A3A;           /* pastel-Dracula background */
-    border: 1.6px solid #4E4A62;   /* softened current-line */
+    background: rgba(0, 0, 0, 0.0);
 }
 
 tooltip {
@@ -33,9 +32,9 @@ tooltip {
 
 /* Workspaces (lavender family) */
 #workspaces {
-    background-color: #4E4A62;
+    background-color: rgba(0, 0, 0, 0.5);
     margin: 4.8px 0 4.8px 4.8px;
-    border: 1.6px solid #4E4A62;
+    border: 1.6px solid #C5B8FF;
 }
 #workspaces button {
     all: initial;
@@ -46,6 +45,7 @@ tooltip {
 }
 #workspaces button.active {
     background-color: #D4CCFF;     /* lighter lavender */
+    border-radius: 5px;
     color: #2E2A3A;
 }
 #workspaces button.focused {
@@ -56,27 +56,30 @@ tooltip {
 }
 #workspaces button:hover {
     background-color: #D4CCFF;
+    opacity: 0.8;
     color: #2E2A3A;
 }
 
 /* Clock */
 #clock {
-    background-color: #4E4A62;
-    border: 1.6px solid #4E4A62;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* border: 1.6px solid #4E4A62; */
+    border: 1.6px solid #C5B8FF;
+
 }
 
 /* Tray – pastel purple */
 #tray {
-    background-color: #2E2A3A;     /* from Bd93f9 → pastel */
+    background-color: rgba(0, 0, 0, 0.5);
     border: 1.6px solid #C5B8FF;
     color: #2E2A3A;
 }
 
 /* Battery – pastel mauve */
 #battery {
-    background-color: #E5D4FF;     /* from 50fa7b → purple */
+    background-color: rgba(0, 0, 0, 0.5);
     border: 1.6px solid #D4CCFF;
-    color: #2E2A3A;
+    /* color: #2E2A3A; */
 }
 
 /* CPU, memory, network, backlight, pulseaudio – lilac tones */
@@ -85,9 +88,9 @@ tooltip {
 #network,
 #backlight,
 #pulseaudio {
-    background-color: #E0D1FF;     /* unified lilac */
+    background-color: rgba(0, 0, 0, 0.5);
     border: 1.6px solid #C5B8FF;
-    color: #2E2A3A;
+    /* color: #2E2A3A; */
 }
 
 /* Critical CPU/memory – soft peach-purple */
