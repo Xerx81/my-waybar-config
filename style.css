@@ -4,12 +4,12 @@
     min-height: 0;
     font-family: "iosevka nerd font";
     font-weight: 500;
-    font-size: 13px;
+    font-size: 13.5px;
     padding: 0;
 }
 
 window#waybar {
-    background: rgba(0, 0, 0, 0.0);
+    background: none;
 }
 
 tooltip {
@@ -34,7 +34,7 @@ tooltip {
 #workspaces {
     background-color: rgba(0, 0, 0, 0.5);
     margin: 4.8px 0 4.8px 4.8px;
-    border: 1.6px solid #C5B8FF;
+    border: 1.6px solid #E5D4FF;
 }
 #workspaces button {
     all: initial;
@@ -64,21 +64,20 @@ tooltip {
 #clock {
     background-color: rgba(0, 0, 0, 0.5);
     /* border: 1.6px solid #4E4A62; */
-    border: 1.6px solid #C5B8FF;
-
+    border: 1.6px solid #E5D4FF;
 }
 
 /* Tray – pastel purple */
 #tray {
     background-color: rgba(0, 0, 0, 0.5);
-    border: 1.6px solid #C5B8FF;
+    border: 1.6px solid #E5D4FF;
     color: #2E2A3A;
 }
 
 /* Battery – pastel mauve */
 #battery {
     background-color: rgba(0, 0, 0, 0.5);
-    border: 1.6px solid #D4CCFF;
+    border: 1.6px solid #E5D4FF;
     /* color: #2E2A3A; */
 }
 
@@ -89,7 +88,7 @@ tooltip {
 #backlight,
 #pulseaudio {
     background-color: rgba(0, 0, 0, 0.5);
-    border: 1.6px solid #C5B8FF;
+    border: 1.6px solid #E5D4FF;
     /* color: #2E2A3A; */
 }
 
