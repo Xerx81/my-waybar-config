@@ -2,7 +2,7 @@
     border: none;
     border-radius: 6px;
     min-height: 0;
-    font-family: "iosevka nerd font";
+    font-family: "Iosevka Nerd Font";
     font-weight: 500;
     font-size: 13.5px;
     padding: 0;
@@ -13,8 +13,9 @@ window#waybar {
 }
 
 tooltip {
-    background-color: #2E2A3A;
-    border: 1.6px solid #4E4A62;
+    background-color: #2e3436;
+    border: 1.6px solid #d3d7cf;
+    color: #ffffff;
 }
 
 #clock,
@@ -27,89 +28,64 @@ tooltip {
 #pulseaudio {
     margin: 4.8px 4.8px 4.8px 0;
     padding: 1.6px 6.4px;
-    color: #ECEFF4;                /* off-white text */
+    background-color: rgba(46, 52, 54, 0.7);  /* Adwaita dark background */
+    border: 1.6px solid #d3d7cf;
+    color: #ffffff;
 }
 
-/* Workspaces (lavender family) */
 #workspaces {
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(46, 52, 54, 0.7);
     margin: 4.8px 0 4.8px 4.8px;
-    border: 1.6px solid #E5D4FF;
+    border: 1.6px solid #d3d7cf;
 }
+
 #workspaces button {
     all: initial;
     min-width: 0;
     box-shadow: inset 0 -2.4px transparent;
     padding: 1.6px 3.2px;
-    color: #C5B8FF;                /* lavender */
+    color: #eeeeee;
+    border-radius: 4px;
 }
+
 #workspaces button.active {
-    background-color: #D4CCFF;     /* lighter lavender */
+    background-color: #d3d7cf;
+    color: #2e3436;
     border-radius: 5px;
-    color: #2E2A3A;
 }
+
 #workspaces button.focused {
-    color: #E0C5FF;                /* pale orchid */
+    color: #ffffff;
+    font-weight: bold;
 }
+
 #workspaces button.urgent {
-    background-color: #E0C5FF;     /* same orchid for urgency */
+    background-color: #ff5c5c;  /* Soft red for urgency */
+    color: #ffffff;
 }
+
 #workspaces button:hover {
-    background-color: #D4CCFF;
-    opacity: 0.8;
-    color: #2E2A3A;
+    background-color: #d3d7cf;
+    opacity: 0.7;
+    color: #2e3436;
 }
 
-/* Clock */
-#clock {
-    background-color: rgba(0, 0, 0, 0.5);
-    /* border: 1.6px solid #4E4A62; */
-    border: 1.6px solid #E5D4FF;
-}
-
-/* Tray – pastel purple */
-#tray {
-    background-color: rgba(0, 0, 0, 0.5);
-    border: 1.6px solid #E5D4FF;
-    color: #2E2A3A;
-}
-
-/* Battery – pastel mauve */
-#battery {
-    background-color: rgba(0, 0, 0, 0.5);
-    border: 1.6px solid #E5D4FF;
-    /* color: #2E2A3A; */
-}
-
-/* CPU, memory, network, backlight, pulseaudio – lilac tones */
-#cpu,
-#memory,
-#network,
-#backlight,
-#pulseaudio {
-    background-color: rgba(0, 0, 0, 0.5);
-    border: 1.6px solid #E5D4FF;
-    /* color: #2E2A3A; */
-}
-
-/* Critical CPU/memory – soft peach-purple */
 #cpu.critical,
 #memory.critical {
-    background-color: #F5E1FF;     /* pale plum */
-    border: 1.6px solid #E5D4FF;
-    color: #2E2A3A;
+    background-color: #ff9999;  /* Light red */
+    border: 1.6px solid #d3d7cf;
+    color: #2e3436;
 }
 
-/* Battery warning – muted lavender-yellow */
 #battery.warning {
-    background-color: #F3D1FF;     /* very pale purple-pink */
-    border: 1.6px solid #E5D4FF;
-    color: #2E2A3A;
+    background-color: #ffd580;  /* Muted orange */
+    border: 1.6px solid #d3d7cf;
+    color: #2e3436;
 }
-/* Battery critical/urgent – soft rose-purple */
+
 #battery.critical,
 #battery.urgent {
-    background-color: #F5C6FF;     /* pastel rose-purple */
-    border: 1.6px solid #E0D1FF;
-    color: #2E2A3A;
+    background-color: #ff5c5c;  /* Same as urgent */
+    border: 1.6px solid #d3d7cf;
+    color: #ffffff;
 }
