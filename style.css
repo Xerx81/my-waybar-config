@@ -2,14 +2,14 @@
     border: none;
     border-radius: 0px;
     min-height: 0;
-    font-family: "Iosevka Nerd Font";
+	font-family: 'JetBrains Mono', 'Hack Nerd Font', 'UbuntuMono', monospace;
     font-weight: 500;
     font-size: 13.5px;
     padding: 0;
 }
 
 window#waybar {
-    background: none;
+    background-color: #2e3436;
 }
 
 tooltip {
@@ -20,23 +20,17 @@ tooltip {
 
 #clock,
 #tray,
-#cpu,
-#memory,
 #battery,
 #network,
 #backlight,
 #pulseaudio {
-    margin: 0px 2px 0 0;
-    padding: 1.6px 6.4px;
-    background-color: rgba(46, 52, 54, 0.7);  /* Adwaita dark background */
-    border: 1.6px solid #d3d7cf;
+    padding: 2px 6.5px;
     color: #ffffff;
 }
 
 #workspaces {
-    background-color: rgba(46, 52, 54, 0.7);
-    margin: 0px;
-    border: 1.6px solid #d3d7cf;
+    margin: 0px 2px;
+    padding: 2px 6.4px;
 }
 
 #workspaces button {
@@ -49,8 +43,6 @@ tooltip {
 }
 
 #workspaces button.active {
-    background-color: #d3d7cf;
-    color: #2e3436;
     border-radius: 0px;
 }
 
@@ -65,27 +57,54 @@ tooltip {
 }
 
 #workspaces button:hover {
-    background-color: #d3d7cf;
-    opacity: 0.7;
-    color: #2e3436;
+    opacity: 0.5;
 }
 
-#cpu.critical,
-#memory.critical {
-    background-color: #ff9999;  /* Light red */
-    border: 1.6px solid #d3d7cf;
-    color: #2e3436;
+/* -----------------------------------------------------------------------------
+* Pulseaudio and Backlight
+* -------------------------------------------------------------------------- */
+
+#pulseaudio,
+#backlight {
+    font-size: 13.5px;
+    margin: 0 0;
+}
+
+/* -----------------------------------------------------------------------------
+* Battery
+* -------------------------------------------------------------------------- */
+
+#battery {
+    font-size: 17px;
+    margin: 0 10px 0 0;
+}
+
+#battery.charging {
+    color: lightgreen;
 }
 
 #battery.warning {
-    background-color: #ffd580;  /* Muted orange */
-    border: 1.6px solid #d3d7cf;
-    color: #2e3436;
+    color: #dca561;
 }
 
-#battery.critical,
-#battery.urgent {
-    background-color: #ff5c5c;  /* Same as urgent */
-    border: 1.6px solid #d3d7cf;
-    color: #ffffff;
+#battery.critical {
+    color: #e82424;
+}
+
+/* -----------------------------------------------------------------------------
+* Custom modules
+* -------------------------------------------------------------------------- */
+
+#custom-launcher {
+	color: white;
+	font-weight: bold;
+    font-size: 15px;
+    margin: 0px 2px;
+    padding: 1.6px 6.4px;
+}
+
+#custom-cava {
+	color: white;
+	margin: 0px 2px;
+	padding: 1.6px 6.4px;
 }
