@@ -64,7 +64,8 @@
         "tooltip-format-disconnected": "Disconnected",
         "max-length": 50,
         "on-click": "nm-connection-editor",
-        "on-click-right": "nm-connection-editor"
+        "on-click-right": "nm-connection-editor",
+        "interval": 2,
     },
 
     "pulseaudio": {
